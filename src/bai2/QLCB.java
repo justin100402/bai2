@@ -123,7 +123,7 @@ public class QLCB {
                 System.out.print("Nhap cong viec: ");
                 job = sc.nextLine().trim();
                 if(job.equals("")){
-                    System.out.println("Cong viec khong duoc bo trong1");
+                    System.out.println("Cong viec khong duoc bo trong");
                     isValid = false;
                 }
                 NhanVien nhanVien = new NhanVien(name, age, sex, address, job);
@@ -165,8 +165,10 @@ public class QLCB {
         show(list);
     }
     
-    public static void main(String[] args) {
-        QLCB b = new QLCB();
+    public void menu(){
+    
+        
+        
 //        b.add();
 //        b.searchByName();
 //        b.showListbeing();
@@ -185,14 +187,14 @@ public class QLCB {
                 selectF = sc.nextInt();
                 
                 if(selectF == 1){
-                    b.add();
+                    add();
                     isValid = false;
                 } else if(selectF == 2){
-                    b.searchByName();
+                    searchByName();
                     isValid = false;
                     sc.nextLine();
                 } else if(selectF == 3 ){
-                    b.showListbeing();
+                    showListbeing();
                     isValid = false;
                 } else {
                     break;
@@ -206,6 +208,8 @@ public class QLCB {
 
           
     }
+        
+    
     
     
     

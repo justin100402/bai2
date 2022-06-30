@@ -26,4 +26,10 @@ public class KySu extends CanBo {
         this.major = major;
     }
 
+    @Override
+    public String toString() {
+        return "KySu{" + "major=" + major + '}';
+    }
+
+    
 }

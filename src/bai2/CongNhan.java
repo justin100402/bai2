@@ -26,4 +26,9 @@ public class CongNhan extends CanBo {
         this.level = level;
     }
 
+    @Override
+    public String toString() {
+        return "CongNhan{" + "level=" + level + '}';
+    }
+
 }

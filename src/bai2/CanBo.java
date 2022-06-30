@@ -58,4 +58,12 @@ public class CanBo {
         this.address = address;
     }
 
+    @Override
+    public String toString() {
+        return "CanBo{" + "name=" + name + ", age=" + age + ", sex=" + sex + ", address=" + address + '}';
+    }
+
+    
+    
+    
 }
